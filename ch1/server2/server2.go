@@ -14,7 +14,7 @@ var count int
 func main() {
 	http.HandleFunc("/", handler)
 	http.HandleFunc("/counter", counter)
-	log.Fatal(http.ListenAndServe("/counter", nil))
+	log.Fatal(http.ListenAndServe(":8000", nil))
 }
 
 // Обработчик, возвращающий компонент пути запрашиваемого URL.
