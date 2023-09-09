@@ -9,6 +9,7 @@ import (
 	"io"
 	"math"
 	"math/rand"
+	"os"
 	"time"
 )
 
@@ -18,6 +19,10 @@ const (
 	whiteIndex = 0 // Первый цвет палитры
 	blackIndex = 1 // Следующий цвет палитры
 )
+
+func main() {
+	lissajous(os.Stdout)
+}
 
 func lissajous(out io.Writer) {
 	const (
