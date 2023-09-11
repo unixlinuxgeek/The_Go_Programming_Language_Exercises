@@ -6,3 +6,12 @@
 Получите ли вы каждый раз одно и то же содержимое?
 Измените ```fetchall``` так, чтобы вывод осуществлялся в файл
 и чтобы затем его можно было изучить.
+
+Первый запуск:
+```shell
+$ go run fetchaLL.go http://google.com http://youtube.com http://github.com
+0.58s   19480 http://google.com
+0.89s  239152 http://github.com
+1.21s  726782 http://youtube.com
+1.21s elapsed
+```
