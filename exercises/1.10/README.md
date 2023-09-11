@@ -9,18 +9,15 @@
 
 Первый запуск:
 ```shell
-$ go run fetchaLL.go http://google.com http://youtube.com http://github.com
-0.51s   19393 http://google.com
-0.75s  239178 http://github.com
-1.21s  771198 http://youtube.com
-1.21s elapsed
+$ go run ./fetchaLL.go https://youtube.com https://youtube.com
+1.92s  723732 https://youtube.com&{0xc00002c420}
+1.92s elapsed
 ```
 
 Второй запуск:
 ```shell
-$ go run fetchaLL.go http://google.com http://youtube.com http://github.com
-0.45s   19417 http://google.com
-0.70s  239178 http://github.com
-1.12s  730549 http://youtube.com
-1.12s elapsed
+$ go run ./fetchaLL.go https://youtube.com https://youtube.com
+0.98s  788946 https://youtube.com&{0xc000284000}
+1.69s  721021 https://youtube.com&{0xc000284060}
+1.69s elapsed
 ```

@@ -1,0 +1,4 @@
+1.02s  769426 https://youtube.com
+1.04s  724114 https://youtube.com
+0.97s  774382 https://youtube.com
+1.48s  724771 https://youtube.com
