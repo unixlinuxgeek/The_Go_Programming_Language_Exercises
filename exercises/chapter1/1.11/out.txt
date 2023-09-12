@@ -1,0 +1,13 @@
+1.14s   19439 https://google.com
+0.88s   19423 https://google.com
+1.00s   19477 https://google.com
+1.08s   19403 https://google.com
+0.95s   19487 https://google.com
+0.90s   19444 https://google.com
+1.00s  723501 https://youtube.com
+0.80s   19379 https://google.com
+0.95s  721372 https://youtube.com
+1.05s   19417 https://google.com
+1.16s  735651 https://youtube.com
+0.96s   19448 https://google.com
+0.99s  768191 https://youtube.com
