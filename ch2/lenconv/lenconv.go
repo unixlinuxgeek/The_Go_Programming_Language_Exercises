@@ -1,5 +1,7 @@
 package lenconv
 
+import "fmt"
+
 type Foot float64
 type Meter float64
 
@@ -7,16 +9,20 @@ const (
 	FOOT = 0.3048
 )
 
-// длину в футы и метры
-// 1 foot = 0.3048  meter
-// 2 foot = 2*0.3048
-func FToM(f float64) Meter {
+func (c Meter) String() string {
+	return fmt.Sprintf("%.2g m", c)
+}
+
+func (f Foot) String() string {
+	return fmt.Sprintf("%.2g ft", f)
+}
+
+// футы в метры
+func FToM(f Foot) Meter {
 	return Meter(f * FOOT)
 }
 
-// длину в футы и метры
-// 1 meter = 1 / 0.3048 = 3.2 foots
-// 2 meter = 2 / 0.3048 = 6.5 foots
-func MToF(m float64) Foot {
+// метры в футы
+func MToF(m Meter) Foot {
 	return Foot(m / FOOT)
 }
