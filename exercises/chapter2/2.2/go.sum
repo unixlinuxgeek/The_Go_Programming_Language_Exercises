@@ -1,0 +1,6 @@
+github.com/unixlinuxgeek/The_Go_Programming_Language_Exercises v0.0.0-20230913140814-3b1d3c320f1d h1:UQfKAlaPGru+CFObLnXzrJ6VPklzAduOY6giHuCD3jw=
+github.com/unixlinuxgeek/The_Go_Programming_Language_Exercises v0.0.0-20230913140814-3b1d3c320f1d/go.mod h1:PbCZg4CWDUgA6hhdalNK39THXTPXpbYdkt0Bgds0V8k=
+github.com/unixlinuxgeek/The_Go_Programming_Language_Exercises/ch2/tempconv v0.0.0-20230912120851-3fb302549809 h1:mLxG92SABfKJJaTgMSO23yAo9Ns5Y9tbl+gzgf66wQU=
+github.com/unixlinuxgeek/The_Go_Programming_Language_Exercises/ch2/tempconv v0.0.0-20230912120851-3fb302549809/go.mod h1:6d55V9CSv3Wlo6/BX5aEhFNnAmk9KZk+qRHnf6uPes8=
+github.com/unixlinuxgeek/The_Go_Programming_Language_Exercises/ch2/wtconv v0.0.0-20230913165317-9073b9e0a73f h1:LN/ZDKs2hBxouUnkU52QcJE+gJNM80g4D4KR4YiFBJ0=
+github.com/unixlinuxgeek/The_Go_Programming_Language_Exercises/ch2/wtconv v0.0.0-20230913165317-9073b9e0a73f/go.mod h1:hqcTNmpjGEvsVwBDidqgn1ieTmy0cuK3ozxdIzv9jsQ=
