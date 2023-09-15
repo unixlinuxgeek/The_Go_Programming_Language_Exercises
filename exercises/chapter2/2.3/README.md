@@ -24,4 +24,8 @@ PASS
 ok      popcount        2.242s
 ```
 
+### github:
+
 [popcount_test.go](https://github.com/unixlinuxgeek/The_Go_Programming_Language_Exercises/blob/main/exercises/chapter2/2.3/popcount_test.go)
+
+[popcount.go](https://github.com/unixlinuxgeek/The_Go_Programming_Language_Exercises/blob/main/exercises/chapter2/2.3/popcount.go)
