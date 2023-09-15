@@ -11,7 +11,7 @@
 go get github.com/unixlinuxgeek/The_Go_Programming_Language_Exercises/ch2/popcount
 ```
 
-#### Функция производительности
+#### Тесты производительности
 
 ```shell
 $ go test -bench=.
