@@ -20,7 +20,7 @@ func init() {
 func PopCount(x uint64) int {
 	var s byte
 	for i := 0; i < 64; i++ {
-		c := pc[x&(x)]
+		c := pc[x&(x)] // проверяем крайний справа ненулевой бит
 		fmt.Println(c)
 		s = pc[byte(x>>(i*8))]
 	}
