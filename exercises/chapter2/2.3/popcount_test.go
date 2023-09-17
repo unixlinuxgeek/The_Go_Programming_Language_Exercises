@@ -12,7 +12,7 @@ func BenchmarkPopCount1(b *testing.B) {
 	}
 }
 
-// Второй тест производительности (используем цикл for)
+// Второй тест производительности
 func BenchmarkPopCount2(b *testing.B) {
 	for n := 0; n < b.N; n++ {
 		PopCount(10000000)
