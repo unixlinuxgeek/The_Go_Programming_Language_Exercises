@@ -6,7 +6,10 @@
 
 package popcount
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 // pc[i] - количество единичных битов в i.
 var pc [256]byte
@@ -17,13 +20,25 @@ func init() {
 	}
 }
 
+// При сдвиге влево старший бит теряется и
+// Оператор сдвига влево обычно записывается как «<<».
 func PopCount(x uint64) int {
 	var s byte
 	for i := 0; i < 64; i++ {
 		c := pc[x&(x)] // проверяем крайний справа ненулевой бит
-		fmt.Println(c)
+		fmt.Fprintf(os.Stdout, "Крайний справа ненулевой бит: %d\n", c)
 		s = pc[byte(x>>(i*8))]
 	}
 
 	return int(s)
+}
+
+// Демонстрация побитового сдвига влево и вправо
+func BitShiftDemo() {
+	// 0010 -> 0100
+	l := BitShiftingLeft(0010, 1) //
+	fmt.Fprintf(os.Stdout, "%d\n", l)
+	// 0010 == 2
+	r := BitShiftingRight(0010, 2)
+	fmt.Fprintf(os.Stdout, "%d\n", r)
 }
