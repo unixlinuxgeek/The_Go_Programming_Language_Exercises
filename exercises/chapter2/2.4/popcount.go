@@ -36,9 +36,10 @@ func PopCount(x uint64) int {
 // Демонстрация побитового сдвига влево и вправо
 func BitShiftDemo() {
 	// 0010 -> 0100
-	l := BitShiftingLeft(0010, 1) //
+	l := BitShiftLeft(0010, 1) //
 	fmt.Fprintf(os.Stdout, "%d\n", l)
-	// 0010 == 2
-	r := BitShiftingRight(0010, 2)
+
+	// 0010 -> 1000
+	r := BitShiftRight(0010, 2)
 	fmt.Fprintf(os.Stdout, "%d\n", r)
 }
