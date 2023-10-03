@@ -8,9 +8,10 @@ import "fmt"
 
 func main() {
 	a := []int{1, 2, 3, 4, 5}
-	b := 10000
+	b := 6
 
-	appendInt(a, b)
+	x := appendInt(a, b)
+	fmt.Println(x)
 }
 
 func appendInt(x []int, y int) []int {
