@@ -18,3 +18,4 @@ func main() {
 }
 ```
 
+[append.go](https://github.com/unixlinuxgeek/The_Go_Programming_Language_Exercises/blob/main/ch4/4.2.1/append.go)
