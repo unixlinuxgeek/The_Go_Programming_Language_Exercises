@@ -1,7 +1,7 @@
 ### Рекурсия
 
 ```shell
-go mod init github.com/unixlinuxgeek/The_Go_Programming_Language_Exercises/ch5
+go get init github.com/unixlinuxgeek/The_Go_Programming_Language_Exercises/ch5
 ```
 
 
