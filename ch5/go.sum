@@ -1,0 +1,4 @@
+github.com/unixlinuxgeek/The_Go_Programming_Language_Exercises/ch1/fetch v0.0.0-20231006110554-ceae5c1ae710 h1:mqtxySQDAzFn+CUU7rGccbnDWeF4NM1chgv9gS8jj38=
+github.com/unixlinuxgeek/The_Go_Programming_Language_Exercises/ch1/fetch v0.0.0-20231006110554-ceae5c1ae710/go.mod h1:A9GLRVIBbKO2vKEZjSbb+X8gB+Qm9f5sJ4jDDQ70GPA=
+golang.org/x/net v0.16.0 h1:7eBu7KsSvFDtSXUIDbh3aqlK4DPsZ1rByC8PFfBThos=
+golang.org/x/net v0.16.0/go.mod h1:NxSsAGuq816PNPmqtQdLE42eU2Fs7NoRIZrHJAlaCOE=

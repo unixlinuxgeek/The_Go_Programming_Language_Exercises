@@ -20,3 +20,19 @@ func main() {
 		fmt.Println(link)
 	}
 }
+
+// visit добавляет в links все ссылки,
+// найденные в n, и возвращает результат.
+func visit(links []string, n *html.Node) []string {
+	if n.Type == html.ElementNode && n.Data == "a" {
+		for _, a := range n.Attr {
+			if a.Key == "href" {
+				links = append(links, a.Val)
+			}
+		}
+	}
+	for c := n.FirstChild; c != nil; c = c.NextSibling {
+		links = visit(links, c)
+	}
+	return links
+}
