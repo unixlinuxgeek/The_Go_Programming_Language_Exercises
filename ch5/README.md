@@ -1,12 +1,32 @@
 ### Рекурсия
 
+Переходим в каталог: ```/home/user/GoProjects``` где user это имя вашего аккаунта,
+например ```/home/dias/GoProjects```
+
+Где: GoProjects папка для проектов go.
+
+Клонируем репозиторий:
 ```shell
-go get init github.com/unixlinuxgeek/The_Go_Programming_Language_Exercises/ch5
+git clone https://github.com/unixlinuxgeek/The_Go_Programming_Language_Exercises
 ```
 
+Переходим в директорию проекта:
+```shell
+cd ```./The_Go_Programming_Language_Exercises/ch5```
+```
 
+Устанавливаем зависимости:
+```shell
+go get golang.org/x/net/html
+```
+
+Теперь можем запустить наши консольные приложения:
 ```shell
 $ ./fetch https://golang.org | ./findLinks1 
+```
+
+Вывод: 
+```shell
 /
 #main-content
 #
@@ -145,11 +165,8 @@ http://www.google.com/intl/en/policies/privacy/
 /s/website-issue
 https://google.com
 https://policies.google.com/technologies/cookies
-geek@lenovo:~/GolandProjects/The_Go_Programming_Language_Exercises/ch5$ 
-
 ```
 
-geek@lenovo:~/GolandProjects/The_Go_Programming_Language_Exercises/ch5$
 ```shell
 $ ./fetch https://golang.org | ./outLine
 [html]
