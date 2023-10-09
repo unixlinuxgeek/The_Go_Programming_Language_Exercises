@@ -12,7 +12,7 @@ git clone https://github.com/unixlinuxgeek/The_Go_Programming_Language_Exercises
 
 Переходим в директорию проекта:
 ```shell
-cd ./The_Go_Programming_Language_Exercises/ch5
+cd ./The_Go_Programming_Language_Exercises/ch5/5.2
 ```
 
 Устанавливаем зависимости:
