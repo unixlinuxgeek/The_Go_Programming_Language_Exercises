@@ -1,4 +1,4 @@
-package __7
+package main
 
 func sum(vals ...int) int {
 	total := 0
