@@ -1,4 +1,4 @@
-module github.com/unixlinuxgeek/The_Go_Programming_Language_Exercises/ch5
+module github.com/unixlinuxgeek/The_Go_Programming_Language_Exercises/ch5/5.2
 
 go 1.20
 
