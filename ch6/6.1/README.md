@@ -5,4 +5,4 @@
 Этот параметр присоединяет функцию к типу этого параметра.
 Например:
 
-!(geometry.go)[https://github.com/unixlinuxgeek/The_Go_Programming_Language_Exercises/blob/main/ch6/geometry.go]
+![geometry.go](https://github.com/unixlinuxgeek/The_Go_Programming_Language_Exercises/blob/main/ch6/geometry.go)
