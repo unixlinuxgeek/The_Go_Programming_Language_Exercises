@@ -4,3 +4,5 @@
 функции находится дополнительный параметр.
 Этот параметр присоединяет функцию к типу этого параметра.
 Например:
+
+!(geometry.go)[The_Go_Programming_Language_Exercises/ch6/geometry.go]
