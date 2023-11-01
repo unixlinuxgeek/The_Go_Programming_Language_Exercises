@@ -14,13 +14,14 @@ import (
 
 func main() {
 	var w io.Writer
-	fmt.Println(w) // <nil>
+	fmt.Printf("%T\n", w) // <nil>
 
 	w = os.Stdout
-	fmt.Println(w) // &{0xc00002a120}
+	fmt.Printf("%T\n", w) // *os.File
 
 	w = new(bytes.Buffer)
-	fmt.Println(w) // empty output
+	fmt.Printf("%T\n", w) // *bytes.Buffer
+
 	w = nil
-	fmt.Println(w) // nil
+	fmt.Printf("%T\n", w) // <nil>
 }
