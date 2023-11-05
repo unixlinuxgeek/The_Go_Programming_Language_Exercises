@@ -1,4 +1,4 @@
-package bytecounter
+package main
 
 type ByteCounter int
 
