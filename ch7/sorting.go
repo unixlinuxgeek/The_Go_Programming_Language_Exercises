@@ -1,6 +1,11 @@
 package bytecounter
 
-import "time"
+import (
+	"fmt"
+	"os"
+	"text/tabwriter"
+	"time"
+)
 
 type Track struct {
 	Title  string
@@ -23,4 +28,15 @@ func length(s string) time.Duration {
 		panic(s)
 	}
 	return d
+}
+
+func printTracks(tracks []*Track) {
+	const format = "%v\t%v\t%v\t%v\t\n"
+	tw := new(tabwriter.Writer).Init(os.Stdout, 0, 0, 2, ' ', 0)
+	fmt.Fprintf(os.Stdout, format, "Title", "Artist", "Album", "Year", "Length")
+	fmt.Fprintf(os.Stdout, format, "-----", "------", "-----", "----", "------")
+	for _, t := range tracks {
+		fmt.Fprintf(tw, format, t.Title, t.Artist, t.Album, t.Year, t.Length)
+	}
+	tw.Flush() // Вычисление размеров столбцов и вывод таблицы
 }
