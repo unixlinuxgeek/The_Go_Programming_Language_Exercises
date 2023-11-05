@@ -1,4 +1,4 @@
-package bytecounter
+package main
 
 import (
 	"fmt"
@@ -39,4 +39,8 @@ func printTracks(tracks []*Track) {
 		fmt.Fprintf(tw, format, t.Title, t.Artist, t.Album, t.Year, t.Length)
 	}
 	tw.Flush() // Вычисление размеров столбцов и вывод таблицы
+}
+
+func main() {
+	printTracks(tracks)
 }
