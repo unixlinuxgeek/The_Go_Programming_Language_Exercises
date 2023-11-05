@@ -1,5 +1,5 @@
 // debug is false
-//  $ go run ./debug_is_false.go
+//  $ go run ./example_without_error.go
 //  panic: runtime error: invalid memory address or nil pointer dereference
 //  [signal SIGSEGV: segmentation violation code=0x1 addr=0x20 pc=0x462e1d]
 //
@@ -7,9 +7,9 @@
 //  bytes.(*Buffer).Write(0x404b99?, {0xc00007cf5c?, 0x0?, 0x0?})
 //        /usr/local/go/src/bytes/buffer.go:168 +0x1d
 //  main.f(...)
-//        /home/geek/GoApps/The_Go_Programming_Language_Exercises/ch7/7.5.1/debug_is_false.go:26
+//        /home/geek/GoApps/The_Go_Programming_Language_Exercises/ch7/7.5.1/example_without_error.go:26
 //  main.main()
-//        /home/geek/GoApps/The_Go_Programming_Language_Exercises/ch7/7.5.1/debug_is_false.go:16 +0x55
+//        /home/geek/GoApps/The_Go_Programming_Language_Exercises/ch7/7.5.1/example_without_error.go:16 +0x55
 //  exit status 2
 //
 
