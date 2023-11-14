@@ -12,12 +12,14 @@ func sum(vals ...int) int {
 
 func max(vals ...int) int {
 	max := 0
-	for i, val := range vals {
-		if i == 0 {
-			max = val
-		}
-		if val > max {
-			max = val
+	if len(vals) > 0 {
+		for i, val := range vals {
+			if i == 0 {
+				max = val
+			}
+			if val > max {
+				max = val
+			}
 		}
 	}
 	return max
@@ -25,12 +27,14 @@ func max(vals ...int) int {
 
 func min(vals ...int) int {
 	min := 0
-	for i, val := range vals {
-		if i == 0 {
-			min = val
-		}
-		if val < min {
-			min = val
+	if len(vals) > 0 {
+		for i, val := range vals {
+			if i == 0 {
+				min = val
+			}
+			if val < min {
+				min = val
+			}
 		}
 	}
 	return min
