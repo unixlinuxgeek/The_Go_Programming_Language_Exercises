@@ -3,7 +3,7 @@
 // добавляя в палитру palette больше значений, а затем выводя их,
 // путем изменения третьего аргумента функции SetColorIndex
 // некоторым нетривиальным способом.
-// example: go run ./Lissajous.go > 04.png
+// anonim_struc_example.go: go run ./Lissajous.go > 04.png
 
 package main
 
