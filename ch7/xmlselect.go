@@ -30,7 +30,6 @@ func main() {
 				fmt.Printf("%s: %s\n", strings.Join(stack, " "), tok)
 			}
 		}
-
 	}
 }
 
