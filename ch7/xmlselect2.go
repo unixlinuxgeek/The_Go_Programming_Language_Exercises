@@ -29,17 +29,26 @@ func main() {
 		switch tok := tok.(type) {
 		case xml.StartElement:
 			for _, n := range tok.Attr {
+				//for _, el := range args {
+				//	if el == n.Name.Local {
+				//		stack = append(stack, tok.Name.Local) // Внесение в стек
+				//		fmt.Print("Element: ", n.Name.Local, " | Value:", n.Value)
+				//		fmt.Print("\n")
+				//	}
+				//}
 				for _, el := range args {
-					if el == n.Name.Local {
+					if el == n.Value {
+						stack = append(stack, tok.Name.Local) // Внесение в стек
 						fmt.Print("Element: ", n.Name.Local, " | Value:", n.Value)
 						fmt.Print("\n")
 					}
 				}
-
 			}
-			stack = append(stack, tok.Name.Local) // Внесение в стек
+			//stack = append(stack, tok.Name.Local) // Внесение в стек
 		case xml.EndElement:
-			stack = stack[:len(stack)-1] // Снятие со стека
+			if (len(stack) - 1) >= 0 {
+				stack = stack[:len(stack)-1] // Снятие со стека
+			}
 		case xml.CharData:
 			if containsAll2(stack, os.Args[1:]) {
 				fmt.Printf("%s: %s\n", strings.Join(stack, " "), tok)
